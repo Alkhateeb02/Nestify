@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm
+.eslintcache
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Prisma
+/backend/src/generated/prisma
+
+# Reports
+reports/
+progress reports-md/
+*report*.py
+*report*.md
+
+# Uploads
+Users_uploads/

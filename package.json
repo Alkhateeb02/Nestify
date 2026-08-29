@@ -1,0 +1,9 @@
+{
+  "name": "nestify-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:all": "npx concurrently --kill-others \"npm run dev --prefix backend\" \"npm run dev --prefix gradp-react\"",
+    "kill": "npx kill-port 5000 5173"
+  }
+}

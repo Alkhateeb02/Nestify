@@ -1,0 +1,71 @@
+| Method    | Output       | Meaning          |
+| --------- | ------------ | ---------------- |
+| Euclidean | Distance ↓   | smaller = better |
+| Cosine    | Similarity ↑ | bigger = better  |
+
+
+
+User clicks "Find Roommate"
+        ↓
+Fetch current user
+        ↓
+Filter same gender ⚠️
+        ↓
+Convert to vectors
+        ↓
+Calculate distance (KNN)
+        ↓
+Sort results
+        ↓
+Pick top K
+        ↓
+Convert to similarity %
+        ↓
+Return matches
+        ↓
+Show in UI
+
+
+
+
+
+🔷 🔹 7. Convert Distance → Similarity
+
+(Optional but better UI)
+
+similarity = 1 / (1 + distance)
+
+
+
+👉 For your roommate system:
+
+✅ Cosine Similarity is BEST
+🔷 🔹 Why Cosine is Better
+
+Because your data is:
+
+Preferences (sleep, habits, personality)
+
+Not physical distance
+
+Not continuous measurements like GPS
+
+
+
+
+🔷 🔹 If You Use FAISS
+
+👉 Do this:
+
+faiss.normalize_L2(vectors)
+faiss.normalize_L2(query)
+
+👉 Then FAISS behaves like:
+
+Cosine Similarity ✅
+
+
+
+we use KNN and cosine and FAISS  
+
+

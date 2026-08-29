@@ -1,0 +1,103 @@
+{
+  "chatbot": [
+    {"query": "Hello Nestify AI!", "is_greet": true, "is_offtopic": false},
+    {"query": "مرحبا بك يا بوت", "is_greet": true, "is_offtopic": false},
+    {"query": "I need to find a furnished room near the university.", "is_greet": false, "is_offtopic": false},
+    {"query": "هل يوجد سكن متوفر بسعر أقل من 150 دينار؟", "is_greet": false, "is_offtopic": false},
+    {"query": "Show me single beds with private bathroom", "is_greet": false, "is_offtopic": false},
+    {"query": "Hi! Can you recommend a flat with wifi?", "is_greet": true, "is_offtopic": false},
+    {"query": "أهلاً، هل توجد غرف مكيفة قريبة؟", "is_greet": true, "is_offtopic": false},
+    {"query": "What is the capital of France?", "is_greet": false, "is_offtopic": true},
+    {"query": "Tell me a joke about housing landlords.", "is_greet": false, "is_offtopic": true},
+    {"query": "Write a python script to parse CSV files.", "is_greet": false, "is_offtopic": true},
+    {"query": "How is the weather in Amman today?", "is_greet": false, "is_offtopic": true},
+    {"query": "صباح الخير، كيف أسجل في السكن؟", "is_greet": true, "is_offtopic": false},
+    {"query": "I want to cook spaghetti, give me a recipe.", "is_greet": false, "is_offtopic": true},
+    {"query": "Do you know Al-Hussein Bin Talal University fees?", "is_greet": false, "is_offtopic": true},
+    {"query": "Is there a parking space in the building?", "is_greet": false, "is_offtopic": false}
+  ],
+  "matching": [
+    {
+      "user": {"id": 1, "gender": "male", "prefs": {"sleep": "early", "smoke": "no", "clean": 5, "noise": 1, "social": 2}},
+      "candidate": {"id": 2, "gender": "male", "prefs": {"sleep": "early", "smoke": "no", "clean": 5, "noise": 1, "social": 2}},
+      "is_match": true
+    },
+    {
+      "user": {"id": 3, "gender": "female", "prefs": {"sleep": "late", "smoke": "yes", "clean": 2, "noise": 4, "social": 5}},
+      "candidate": {"id": 4, "gender": "female", "prefs": {"sleep": "late", "smoke": "yes", "clean": 2, "noise": 4, "social": 5}},
+      "is_match": true
+    },
+    {
+      "user": {"id": 5, "gender": "male", "prefs": {"sleep": "early", "smoke": "no", "clean": 4, "noise": 2, "social": 3}},
+      "candidate": {"id": 6, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 4, "noise": 2, "social": 3}},
+      "is_match": false
+    },
+    {
+      "user": {"id": 7, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 5, "noise": 1, "social": 2}},
+      "candidate": {"id": 8, "gender": "female", "prefs": {"sleep": "early", "smoke": "yes", "clean": 5, "noise": 1, "social": 2}},
+      "is_match": false
+    },
+    {
+      "user": {"id": 9, "gender": "male", "prefs": {"sleep": "early", "smoke": "no", "clean": 4, "noise": 2, "social": 3}},
+      "candidate": {"id": 10, "gender": "male", "prefs": {"sleep": "late", "smoke": "no", "clean": 4, "noise": 2, "social": 3}},
+      "is_match": true
+    },
+    {
+      "user": {"id": 11, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 5, "noise": 1, "social": 1}},
+      "candidate": {"id": 12, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 3, "noise": 3, "social": 3}},
+      "is_match": true
+    },
+    {
+      "user": {"id": 13, "gender": "male", "prefs": {"sleep": "late", "smoke": "yes", "clean": 4, "noise": 4, "social": 5}},
+      "candidate": {"id": 14, "gender": "male", "prefs": {"sleep": "early", "smoke": "no", "clean": 4, "noise": 4, "social": 5}},
+      "is_match": false
+    },
+    {
+      "user": {"id": 15, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 5, "noise": 1, "social": 2}},
+      "candidate": {"id": 16, "gender": "female", "prefs": {"sleep": "early", "smoke": "no", "clean": 2, "noise": 4, "social": 4}},
+      "is_match": false
+    }
+  ],
+  "tagging": [
+    {
+      "title": "Apartment with high-speed wifi",
+      "description": "Fitted with fiber optic internet access and bills included in price.",
+      "expected_tags": ["wifi", "utilities_included"]
+    },
+    {
+      "title": "Furnished studio near AHU",
+      "description": "Cozy single room near campus, fully furnished with bed and study desk.",
+      "expected_tags": ["furnished", "near_uni"]
+    },
+    {
+      "title": "Room with AC and parking space",
+      "description": "Quiet room with split AC unit and private garage parking.",
+      "expected_tags": ["ac", "parking"]
+    },
+    {
+      "title": "Secure single room flat",
+      "description": "Private room for students. Safe community with CCTV cameras and guard.",
+      "expected_tags": ["private_room", "security"]
+    },
+    {
+      "title": "Shared dorm with balcony access",
+      "description": "Shared room with two beds. Balcony where smoking is allowed.",
+      "expected_tags": ["shared_room", "smoking_allowed"]
+    },
+    {
+      "title": "Cheap room close to services",
+      "description": "Located near shops, restaurant hubs, and taxi stations.",
+      "expected_tags": ["near_services", "near_connectors"]
+    },
+    {
+      "title": "Studio near center and university",
+      "description": "Short walking distance to Al-Hussein University and town center.",
+      "expected_tags": ["near_center", "near_uni", "near_services"]
+    },
+    {
+      "title": "Pet friendly student room",
+      "description": "Bring your pets! Spacious layout with garden area.",
+      "expected_tags": ["pets_allowed"]
+    }
+  ]
+}

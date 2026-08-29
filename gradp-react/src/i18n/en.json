@@ -1,0 +1,821 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Find Room",
+    "features": "Features",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Finding homes in Ma'an City",
+    "welcome": "WELCOME TO",
+    "description": "The ultimate destination for students in Ma'an. Discover the best housing options near your university with ease and security.",
+    "get_started": "Get Started",
+    "about_us": "About Us",
+    "floating": {
+      "availability": "Availability",
+      "location": "Near Ma'an Campus",
+      "trust": "Trust",
+      "verified": "Verified Owners"
+    }
+  },
+  "how_it_works": {
+    "badge": "Process Roadmap",
+    "title_part1": "HOW IT ",
+    "title_part2": "WORKS...",
+    "subtitle": "Follow these simple steps to unlock the full potential of our platform, tailored for your specific needs",
+    "steps": {
+      "step1": {
+        "title": "Get Started",
+        "desc": "Click the Get Started button to begin your journey with ease."
+      },
+      "step2": {
+        "title": "Choose Your Path",
+        "desc": "Select whether you are a Student or a Property Owner."
+      },
+      "step3": {
+        "title": "Create Your Profile",
+        "desc": "Fill in your information based on your selected role and preferences."
+      },
+      "step4": {
+        "title": "Unlock Smart Features",
+        "desc": "Students get suggestions. Owners can manage properties easily."
+      }
+    }
+  },
+  "Fe": {
+    "badge": "Why Nestify?",
+    "title_part1": "EVERYTHING YOU NEED IN ONE ",
+    "title_part2": "PLACE...",
+    "subtitle": "We provide a seamless and secure experience specifically designed for students living in Ma'an City.",
+    "items": {
+      "safe": {
+        "title": "Safe & Verified",
+        "desc": "All properties and owners in Ma'an are hand-picked and verified by our team."
+      },
+      "search": {
+        "title": "Smart Search",
+        "desc": "Find exactly what you need by price, location, or specific student amenities."
+      },
+      "contact": {
+        "title": "Instant Contact",
+        "desc": "Connect directly with owners via WhatsApp or call without any middleman."
+      },
+      "prices": {
+        "title": "Best Prices",
+        "desc": "Exclusive deals for university students that fit your monthly budget."
+      },
+      "support": {
+        "title": "Local Support",
+        "desc": "Our team in Ma'an is ready to help you on-ground whenever you need us."
+      },
+      "hub": {
+        "title": "Student Hub",
+        "desc": "Join a community of students and share your housing experiences."
+      }
+    }
+  },
+  "user_type": {
+    "badge": "Join our community",
+    "title_part1": "READY TO",
+    "title_part2": " MOVE IN?",
+    "subtitle": "Seamlessly connect with your ideal living space or your next great tenant with our trusted network.",
+    "student": {
+      "title": "FOR STUDENTS",
+      "desc": "Find your home away from home with zero hassle and verified listings.",
+      "btn": "Start Browsing",
+      "f1": "Browse verified properties",
+      "f2": "Compare prices & amenities",
+      "f3": "Student-friendly terms",
+      "f4": "Direct chat with owners",
+      "f5": "Exclusive student deals"
+    },
+    "owner": {
+      "title": "FOR OWNERS",
+      "desc": "Turn your property into a high-yield investment with smart management tools.",
+      "btn": "List Property",
+      "f1": "List property for free",
+      "f2": "Reach verified students",
+      "f3": "Easy dashboard tools",
+      "f4": "Secure payment system"
+    }
+  },
+  "login_page": {
+    "meta": {
+      "feature": "Key Feature"
+    },
+    "features": {
+      "step1": "Smart Profile Matching",
+      "step2": "Lifestyle Syncing",
+      "step3": "Secure Connections",
+      "login": "Secure Access"
+    },
+    "dynamic": {
+      "login": {
+        "title": "Welcome Back!",
+        "subtitle": "Pick up right where you left off, your community awaits.",
+        "badge": "Login"
+      },
+      "step1": {
+        "title": "Don’t just find a room, Find your place.",
+        "subtitle": "Nestify matches you with the right home and the right roommate — based on your lifestyle, habits, and what actually makes you feel comfortable.",
+        "badge": "Begin"
+      },
+      "step2": {
+        "title": "How you live matters.",
+        "subtitle": "Your habits and energy shape the kind of roommate you'll feel comfortable with.",
+        "badge": "Getting Closer..."
+      },
+      "step3": {
+        "title": "Who do you want to live with?",
+        "subtitle": "Set your preferences and let us find someone who fits your lifestyle and expectations.",
+        "badge": "You're All Set!!"
+      }
+    },
+    "register_tab": "Sign Up",
+    "login_tab": "Sign In",
+    "form_title": "Create Account",
+    "form_subtitle": "Register now to access our premium housing services.",
+    "full_name": "Full Name",
+    "phone": "Phone Number",
+    "major": "Academic Major",
+    "email": "Email Address",
+    "password": "Password",
+    "select_semester": "Semester",
+    "semesters": {
+      "0": "First Semester",
+      "1": "Second Semester",
+      "2": "Summer Semester"
+    },
+    "select_year": "Academic Year",
+    "years": {
+      "0": "First Year",
+      "1": "Second Year",
+      "2": "Third Year",
+      "3": "Fourth Year"
+    },
+    "user_gender": "Gender",
+    "gender": {
+      "female": "Female",
+      "male": "Male"
+    },
+    "btn_submit": "Next Step",
+    "personal_info": "Personal Information",
+    "room_info": "Roommate Information",
+    "create_your_profile": "Create Your Profile",
+    "login_title": "Welcome Back",
+    "login_desc": "Sign in to access your personalized housing dashboard and connect with verified listings in Ma'an City.",
+    "btn_login": "Log In",
+    "forgot_password": "Forgot Password?",
+    "progress": "Progress",
+    "step": "Step",
+    "life_and_personality": "Lifestyle & Personality",
+    "lifestyle_profile": "Lifestyle Profile",
+    "lifestyle_profile_desc": "Answer a few quick questions so we can understand your lifestyle and match you with compatible roommates.",
+    "profile_quiz": "Profile Quiz",
+    "question": "Question",
+    "quick_question": "Quick Question",
+    "tap_to_choose": "Tap to choose",
+    "previous_question": "Previous Question",
+    "of": "of",
+    "back": "Back"
+  },
+  "footer": {
+    "description": "Empowering students in Ma'an to find their perfect university home with trust and ease.",
+    "quick_links": "Quick Links",
+    "support": "Support",
+    "contact": "Contact Us",
+    "location": "Jordan, Ma'an City",
+    "rights": "ALL RIGHTS RESERVED.",
+    "built_with": "Built with",
+    "for_students": "for Ma'an Students",
+    "links": {
+      "home": "Home",
+      "find_room": "Find a Room",
+      "features": "Features",
+      "about_maan": "About Ma'an",
+      "faq": "FAQ",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact_us": "Contact Us"
+    }
+  },
+  "steps": {
+    "personal_info": "Personal Info",
+    "personal_info_sub": "Basic student details",
+    "lifestyle": "Lifestyle",
+    "lifestyle_sub": "Your daily habits",
+    "preferences": "Preferences",
+    "preferences_sub": "Roommate expectations"
+  },
+  "quiz": {
+    "sleep": {
+      "title": "Sleep Schedule",
+      "subtitle": "What best describes your daily sleep rhythm?",
+      "early_sleeper": "Early sleeper",
+      "balanced": "Balanced",
+      "night_owl": "Night owl"
+    },
+    "study": {
+      "title": "Study Style",
+      "subtitle": "How do you usually prefer to study?",
+      "quiet_focused": "Quiet and focused",
+      "flexible": "Flexible",
+      "background_music": "With background music"
+    },
+    "cleanliness": {
+      "title": "Cleanliness Level",
+      "subtitle": "How important is cleanliness in your space?",
+      "very_clean": "Very clean",
+      "moderate": "Moderate",
+      "relaxed": "Relaxed"
+    },
+    "social": {
+      "title": "Social Style",
+      "subtitle": "How would you describe your social personality?",
+      "introvert": "Introvert",
+      "ambivert": "Ambivert",
+      "extrovert": "Extrovert"
+    },
+    "noise": {
+      "title": "Noise Tolerance",
+      "subtitle": "What level of noise feels okay for you?",
+      "very_quiet": "Very quiet",
+      "moderate": "Moderate",
+      "doesnt_matter": "Doesn’t matter"
+    },
+    "guests": {
+      "title": "Guests / Visitors",
+      "subtitle": "How often are you comfortable with visitors?",
+      "rarely": "Rarely",
+      "sometimes": "Sometimes",
+      "often": "Often"
+    },
+    "smoking": {
+      "title": "Smoking",
+      "subtitle": "Do you smoke?",
+      "smoker": "Smoker",
+      "non-smoker": "Non-smoker"
+    }
+  },
+  "roommate3": {
+    "layout": {
+      "title1": "Find Your",
+      "title2": "Ideal Roommate",
+      "description": "Tell us what matters most to you in a roommate so we can help you find someone more compatible with your daily life.",
+      "image_alt": "profile illustration"
+    },
+    "prefs": {
+      "badge": "Roommate Preferences",
+      "title": "Your Ideal Roommate",
+      "description": "Answer a few quick questions so we can understand what kind of roommate would suit you best.",
+      "quiz_label": "Roommate Quiz",
+      "question_counter": "Question",
+      "of": "of",
+      "preference_question": "Preference Question",
+      "tap_to_choose": "Tap to choose",
+      "previous_question": "Previous Question"
+    },
+    "questions": {
+      "socialType": {
+        "title": "Preferred social type",
+        "subtitle": "What kind of roommate personality do you usually prefer?",
+        "social": "Social",
+        "independent": "Independent"
+      },
+      "roomVibe": {
+        "title": "Room environment",
+        "subtitle": "What kind of room vibe feels more comfortable for you?",
+        "study": "Study vibes",
+        "chill": "Chill vibes"
+      },
+      "sleepType": {
+        "title": "Sleep compatibility",
+        "subtitle": "What sleep routine would you rather your roommate have?",
+        "early": "Early sleeper",
+        "flexible": "Flexible",
+        "night": "Night owl"
+      },
+      "studyHabits": {
+        "title": "Study habits",
+        "subtitle": "How would you like your roommate to study?",
+        "quiet": "Quiet and focused",
+        "music": "With background music",
+        "flexible": "Flexible"
+      },
+      "hostingStyle": {
+        "title": "Guests and visitors",
+        "subtitle": "How often are you comfortable with your roommate having guests?",
+        "rarely": "Rarely",
+        "sometimes": "Sometimes",
+        "often": "Often"
+      },
+      "socialEnergy": {
+        "title": "Daily interaction",
+        "subtitle": "How much interaction do you want with your roommate day to day?",
+        "minimal": "Minimal",
+        "balanced": "Balanced",
+        "close": "Close friendship"
+      },
+      "smoking": {
+        "title": "Smoking",
+        "subtitle": "Do you smoke?",
+        "smoker": "Smoker",
+        "non-smoker": "Non-smoker"
+      }
+    }
+  },
+  "auth": {
+    "step_indicator": "Step {{current}} of {{total}}"
+  },
+  "property_details": {
+    "back_to_listings": "Back to listings",
+    "gender_restricted_title": "Access Restricted",
+    "gender_restricted_msg": "This dorm is designated for the opposite gender. Please browse listings that match your profile.",
+    "rating": "Rating",
+    "about_property": "About This Property",
+    "listed_by": "Listed By",
+    "trusted_host": "Trusted Host",
+    "verified": "Verified",
+    "amenities": "Amenities & Features",
+    "nearby": "What's Nearby",
+    "walking_dist": "Estimated walking distances",
+    "about_this_place": "About this place",
+    "house_rules": "House Rules",
+    "nearby_places": "Nearby Places",
+    "location": "Location",
+    "hosted_by": "Hosted by {{name}}",
+    "reserve_now": "Reserve Now",
+    "secure_payment": "Secure Nestify Payment",
+    "landlord": "Landlord",
+    "verified_owner": "Verified Owner",
+    "pricing_disclaimer": "Prices do not include water and electricity.",
+    "approval_disclaimer": "You won't be charged until the landlord approves.",
+    "stats": {
+      "occupancy": "Occupancy",
+      "area": "Size",
+      "capacity": "Capacity",
+      "target": "Target",
+      "type": "Type",
+      "safety": "Safety",
+      "solo": "Solo",
+      "bed_basis": "Bed Basis",
+      "students_count": "{{current}}/{{total}} Students",
+      "female_only": "Female",
+      "male_only": "Male",
+      "any_gender": "Any Gender",
+      "verified_text": "Verified",
+      "apartment": "Apartment",
+      "studio": "Studio",
+      "shared_room": "Shared Room",
+      "beds_available": "Beds Available",
+      "beds_left": "Beds Left",
+      "beds_occupied": "Occupied"
+    },
+    "categories": {
+      "supermarkets": "Supermarkets",
+      "laundry": "Laundry",
+      "hospitals": "Health Centers",
+      "gasStations": "Gas Stations"
+    },
+    "listings": {
+      "badge": "Discover Your Next Home",
+      "title_main": "Find the perfect",
+      "title_sub": "student living space",
+      "search_placeholder": "Search by city or property...",
+      "filter_any_type": "Any Type",
+      "filter_any_gender": "Any Gender",
+      "filter_any_budget": "Any Budget",
+      "budget_under_100": "Under 100 JOD",
+      "budget_100_150": "100 - 150 JOD",
+      "budget_above_150": "Above 150 JOD",
+      "sort_by": "Sort By",
+      "sort_newest": "Newest",
+      "sort_price_low": "Price: Low to High",
+      "sort_price_high": "Price: High to Low",
+      "all_properties": "All Properties",
+      "apartments": "Apartments",
+      "studios": "Studios",
+      "shared": "Shared",
+      "available_now": "Available now",
+      "available_homes": "Available Homes",
+      "verified_listings": "Verified listings in Ma'an Jordan",
+      "no_results": "No matching results",
+      "no_results_desc": "We couldn't find any housing matching your criteria. Try adjusting your filters or search terms.",
+      "reset_filters": "Reset All Filters",
+      "available": "Available",
+      "rented": "Rented",
+      "view_details": "View Details",
+      "per_bed": "Per Bed",
+      "similar_properties": "Similar Properties"
+    },
+    "features": {
+      "wifi": "Wi-Fi",
+      "wifi_desc": "High-speed internet",
+      "furnished": "Furnished",
+      "furnished_desc": "Fully equipped rooms",
+      "kitchen": "Kitchen",
+      "kitchen_desc": "Shared / private",
+      "ac": "AC",
+      "ac_desc": "Air conditioning",
+      "parking": "Parking",
+      "parking_desc": "On-site parking",
+      "laundry": "Laundry",
+      "laundry_desc": "Laundry access",
+      "washing_machine": "Washer",
+      "washing_machine_desc": "Washing machine available",
+      "privateBathroom": "Private Bath",
+      "privateBathroom_desc": "En-suite bathroom",
+      "tv": "TV",
+      "tv_desc": "Television included",
+      "coffee": "Coffee maker",
+      "coffee_desc": "Coffee machine available",
+      "security": "Security",
+      "security_desc": "Secure building",
+      "gym": "Gym",
+      "gym_desc": "Fitness center access",
+      "workspace": "Workspace",
+      "workspace_desc": "Dedicated study/work area",
+      "heating": "Heating",
+      "heating_desc": "Central/room heating",
+      "electricity": "Electricity included",
+      "electricity_desc": "Utility bills covered",
+      "utilities_included": "Utilities Included",
+      "near_uni": "Near University",
+      "near_services": "Near Services",
+      "near_center": "Near City Center",
+      "near_connectors": "Near Transport",
+      "pets_allowed": "Pets Allowed",
+      "smoking_allowed": "Smoking Allowed",
+      "private_room": "Private Room",
+      "shared_room": "Shared Room"
+    },
+    "gallery": {
+      "available_now": "Available Now",
+      "fully_rented": "Fully Rented",
+      "show_all": "Show all photos"
+    },
+    "map": {
+      "loading": "Loading map...",
+      "open_in_google_maps": "Open in Google Maps"
+    }
+  },
+  "property_rules": {
+    "title": "Property Rules",
+    "strict_adherence": "Strict adherence to rules is required.",
+    "no_smoking": "No Smoking inside",
+    "smoking_allowed": "Smoking allowed",
+    "guests_time": "Guests can stay up until 10 PM",
+    "guests_10pm": "Guests can stay up until 10 PM",
+    "guests_free": "Can have guests freely",
+    "quiet_hours": "Quiet hours apply: 11 PM - 7 AM",
+    "quiet_none": "No strict quiet hours",
+    "no_pets": "No Pets allowed",
+    "pets_allowed": "Pets allowed",
+    "no_parties": "No parties/music allowed",
+    "parties_allowed": "Parties/music allowed"
+  },
+  "owner_login": {
+    "title_login": "Owner Login",
+    "title_register": "New Owner Account",
+    "subtitle_login": "Welcome back to Nestify Platform",
+    "subtitle_register": "Join us as a property owner to list and manage your spaces easily.",
+    "badge_login": "Welcome Back",
+    "badge_register": "Partner With Us",
+    "btn_register_tab": "Register",
+    "btn_login_tab": "Login",
+    "full_name": "Full Name",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "password": "Password",
+    "forgot_password": "Forgot Password?",
+    "btn_submit_login": "Sign In",
+    "btn_submit_register": "Sign Up"
+  },
+  "owner_dashboard": {
+    "role": "Property Owner",
+    "tab_dashboard": "Dashboard",
+    "tab_bookings": "Booking Requests",
+    "tab_maintenance": "Maintenance Requests",
+    "tab_settings": "Account Settings",
+    "logout": "Logout",
+    "welcome": "Welcome back,",
+    "welcome_desc": "From here you can manage your properties, add new ones, and track your performance.",
+    "overview": "Dashboard Overview",
+    "welcome_back": "Welcome back to your control panel.",
+    "add_property": "Add New Property",
+    "total_properties": "Total Active Properties",
+    "active_board": "Active Listings Board",
+    "edit_property": "Edit Property Details",
+    "add_title": "Add New Property",
+    "prop_name": "Property Name",
+    "prop_name_ph": "Al-Rowad Dorm...",
+    "prop_type": "Property Type",
+    "type_studio": "Studio",
+    "type_per_bed": "Per Bed",
+    "type_hybrid": "Hybrid",
+    "capacity": "Capacity (for Hybrid)",
+    "location_text": "Location (Text)",
+    "location_text_ph": "University St",
+    "maps_url": "Maps URL",
+    "images": "Image URLs (comma separated)",
+    "features": "Amenities & Features",
+    "save_changes": "Save Changes",
+    "list_property": "List Property",
+    "cancel": "Cancel",
+    "no_props": "No properties listed yet",
+    "start_adding": "Start your journey by adding your first property",
+    "beds": "Beds",
+    "settings_title": "Personal Information",
+    "settings_desc": "Update your contact and login details here.",
+    "save_settings": "Save Settings",
+    "success": "Settings saved successfully!",
+    "step_basic": "Basic Info",
+    "step_price": "Price & Details",
+    "step_location": "Location & Photos",
+    "step_features": "Features",
+    "step_rules": "House Rules",
+    "step_nearby": "Nearby Places",
+    "cat_supermarkets": "Supermarkets",
+    "cat_laundry": "Laundry",
+    "cat_hospitals": "Hospitals",
+    "cat_gas": "Gas Stations",
+    "add_desc": "Complete the steps to list your property on Nestify.",
+    "step_word": "Step",
+    "btn_back": "Back",
+    "btn_next": "Next",
+    "add_btn": "Add",
+    "place_name": "Name",
+    "place_dist": "Dist",
+    "type_apartment": "Apartment",
+    "type_shared": "Shared Room",
+    "type_villa": "Villa",
+    "listing_type": "Listing Type",
+    "type_solo": "Solo (Entire)",
+    "target_gender": "Target Gender",
+    "gender_male": "Male",
+    "gender_female": "Female",
+    "gender_any": "Any",
+    "prop_desc": "Description",
+    "prop_desc_ph": "Brief description...",
+    "price": "Price",
+    "currency": "Currency",
+    "area": "Area (m²)",
+    "rental_period": "Rental Period",
+    "monthly": "Monthly",
+    "daily": "Daily",
+    "seasonal": "Seasonal (4 Months)",
+    "upload_photos": "Upload Housing Photos",
+    "click_to_browse": "Click to browse"
+  },
+  "owner_maintenance": {
+    "status_pending": "Pending",
+    "status_processing": "Processing",
+    "status_done": "Done",
+    "status_rejected": "Rejected",
+    "title": "Maintenance Requests",
+    "desc": "Manage and track maintenance requests from tenants",
+    "filter_all": "All",
+    "description": "Description",
+    "view_image": "View Full Image",
+    "action_reject": "Reject",
+    "action_accept": "Accept & Start",
+    "action_done": "Mark as Done",
+    "closed": "This request is closed",
+    "no_requests": "No Maintenance Requests",
+    "no_requests_desc": "No requests found with this status"
+  },
+  "student_maintenance": {
+    "title": "Maintenance Request",
+    "select_category": "Select Issue Category",
+    "categories": {
+      "electrical": "Electrical",
+      "plumbing": "Plumbing",
+      "furniture": "Furniture",
+      "other": "Other"
+    },
+    "details_label": "Tell us more details",
+    "details_placeholder": "e.g. The kitchen faucet is leaking...",
+    "attach_photos": "Attach Photos",
+    "submit": "Submit Request Now"
+  },
+  "booking_panel": {
+    "steps": {
+      "dates": "Move-in Date",
+      "method": "Choose Payment",
+      "visa": "Card Details",
+      "cash": "Cash Payment",
+      "done": "Booking Sent!"
+    },
+    "dates": {
+      "start_label": "Select your move-in start date:",
+      "last_day": "Last day of stay:",
+      "duration_seasonal": "Duration: 4 months (Seasonal)",
+      "duration_monthly": "Duration: 1 month",
+      "duration_daily": "Duration: 1 day (24 hours)",
+      "duration_daily_plural": "Duration: {{count}} days",
+      "num_days_label": "Number of days:",
+      "note": "Note: Your stay officially begins from the date the owner approves your request.",
+      "continue": "Continue"
+    },
+    "method": {
+      "label": "Select how you'd like to pay:",
+      "credit_card": "Credit / Debit Card",
+      "cash": "Cash",
+      "back": "Back",
+      "continue": "Continue"
+    },
+    "cash": {
+      "notice_title": "Cash Payment Notice",
+      "notice_desc": "You must pay in person within 2 business days of approval. Otherwise, the booking will be automatically cancelled.",
+      "book_now": "Got it, Book Now",
+      "back": "Back"
+    },
+    "done": {
+      "title": "Booking Request Sent!",
+      "redirecting": "Redirecting...",
+      "failed": "Failed to send booking request. Please try again."
+    },
+    "visa_form": {
+      "cardholder": "Cardholder Name",
+      "card_number": "Card Number",
+      "expiry": "Expiry",
+      "bank": "Bank",
+      "pay_now": "Pay Now",
+      "back": "Back"
+    }
+  },
+  "coming_soon": {
+    "title": "Coming Soon",
+    "desc": "We are currently refining this experience to be available for you soon.",
+    "back": "Back to Hub"
+  },
+  "property_grid": {
+    "no_properties": "No properties found",
+    "try_changing": "Try changing the search or filters.",
+    "reset_filters": "Reset Filters"
+  },
+  "student_overview": {
+    "no_booking_title": "No Residence Booked",
+    "no_booking_desc": "Start your study journey by choosing the best residence.",
+    "browse_units": "Browse Available Units",
+    "current_unit": "Current Active Unit",
+    "active_contract": "Active Contract",
+    "pending": "Pending",
+    "owner_name": "Owner Name",
+    "payment_method": "Payment Method",
+    "visa_card": "Visa Card",
+    "cash": "Cash",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "full_location": "Full Location",
+    "ai_assistant": "Nestify AI Assistant",
+    "have_question": "Have a question?",
+    "chat_ai": "Chat with AI"
+  },
+  "student_sidebar": {
+    "hub": "Student Hub",
+    "hey": "Hey, ",
+    "quick_look": "A quick look at your residence & actions.",
+    "explore": "Explore More Units"
+  },
+  "owner_booking": {
+    "monthly": "Monthly",
+    "daily": "Daily",
+    "seasonal": "Seasonal (4 months)",
+    "title": "Booking Requests",
+    "desc": "Review incoming booking requests and take action.",
+    "incoming": "Incoming Requests",
+    "request_single": "request",
+    "request_plural": "requests",
+    "no_requests": "No booking requests yet",
+    "no_requests_desc": "Requests will appear here when received.",
+    "status_approved": "Approved",
+    "status_rejected": "Rejected",
+    "status_pending": "Pending",
+    "cash": "Cash",
+    "approve": "Approve",
+    "reject": "Reject",
+    "approved_done": "Approved",
+    "rejected_done": "Rejected"
+  },
+  "student_settings": {
+    "title": "Settings",
+    "subtitle": "Manage your profile and preferences",
+    "tabs": {
+      "profile": "Profile Info",
+      "lifestyle": "My Lifestyle",
+      "roommate": "Roommate Prefs"
+    },
+    "actions": {
+      "save": "Save Changes",
+      "update_lifestyle": "Update Lifestyle",
+      "save_roommate": "Save Roommate Prefs",
+      "saved": "Saved!",
+      "updated": "Updated!",
+      "success": "Saved Successfully!"
+    }
+  },
+  "student_history": {
+    "no_history_title": "No Reservation History",
+    "no_history_desc": "You haven't reserved anything yet.",
+    "browse_btn": "Browse Properties",
+    "title": "Reservation History",
+    "subtitle": "Your current booking details",
+    "active_contract": "Active Contract",
+    "pending_review": "Pending Review",
+    "property_label": "Property",
+    "owner_label": "Owner: {{name}}",
+    "location": "Location",
+    "payment_method": "Payment Method",
+    "start_date": "Start Date",
+    "end_date": "End Date"
+  },
+  "forgot_password_page": {
+    "back_to_login": "Back to Login",
+    "success_title": "Email Sent!",
+    "success_msg": "A password reset link has been sent to {{email}}. Please check your inbox.",
+    "note_title": "💡 Note:",
+    "note_msg": "After resetting your password via the link in your email, you can log in using your new password.",
+    "form_title": "Forgot Password?",
+    "form_desc": "Enter your email address and we'll send you a link to reset your password.",
+    "email_ph": "Email address",
+    "send_btn": "Send Reset Link",
+    "remember_pwd": "Remember your password? ",
+    "sign_in_btn": "Sign in",
+    "error_empty": "Please enter your email address",
+    "error_invalid": "Please enter a valid email address"
+  },
+  "roommate_matching": {
+    "title": "Roommate Matching",
+    "subtitle": "Find the perfect roommate match for you",
+    "find_matches_btn": "Find My Matches",
+    "find_title": "Ready to find your roommate?",
+    "find_desc": "We'll suggest the best matches based on your preferences.",
+    "tabs": {
+      "suggestions": "Suggestions",
+      "requests": "Roommate Requests"
+    },
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "rejected": "Rejected"
+    },
+    "card": {
+      "reserved": "Reserved ✓",
+      "no_booking": "No Booking",
+      "pair_btn": "Send Pair Request"
+    },
+    "request": {
+      "matched_success": "Successfully matched!",
+      "accept": "Accept",
+      "reject": "Reject",
+      "cancel": "Cancel Request",
+      "sent": "Sent Request",
+      "received": "Received Request",
+      "view_profile": "View Profile",
+      "no_requests": "No requests yet. Send a pair request from Suggestions."
+    },
+    "profile": {
+      "matched_title": "Matched Roommate",
+      "phone": "Phone",
+      "locked": "Locked until accepted",
+      "major": "Major",
+      "year": "Academic Year",
+      "reservation": "Platform Reservation",
+      "yes": "Yes ✅",
+      "no": "No ❌",
+      "habits_title": "🏠 Shared Habits & Preferences",
+      "habits_desc": "You were matched based on compatible roommate preference profiles.",
+      "close": "Close"
+    }
+  },
+  "policies": {
+    "title": "Platform Policies",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer_desc": "Nestify is a mediator platform. We bear no legal responsibility for individual actions of users or owners. All choices are made at your own risk.",
+    "guarantee_note": "Note: The platform provides no guarantees for roommate behavior; compatibility depends on input data.",
+    "privacy_title": "Privacy Policy",
+    "privacy_item1": "Data is used solely for matching optimization.",
+    "privacy_item2": "Contact numbers only show upon mutual interest.",
+    "agree_checkbox": "I agree to the terms and policies",
+    "continue_btn": "Continue",
+    "agree_prefix": "I agree to the ",
+    "agree_link": "privacy policies"
+  },
+  "chatbot": {
+    "title": "Nestify AI Helper",
+    "subtitle": "Active to help you",
+    "placeholder": "Type your message...",
+    "welcome": "Hello {{name}}! 🌟 I am your Nestify AI Assistant here to help you with Ma'an housing. How can I help you today?",
+    "online": "Online Now",
+    "chips": {
+      "campus": "Dorms near campus 🏫",
+      "prices": "How much is rent? 💰",
+      "roommate": "Find a roommate 🤝",
+      "booking": "How to reserve? 📝"
+    }
+  }
+}

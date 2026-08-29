@@ -1,0 +1,25 @@
+| Feature             | Cosine Only | FAISS |
+| ------------------- | ----------- | ----- |
+| Easy                | ✅           | ✅     |
+| Fast for small data | ✅           | ✅     |
+| Fast for large data | ❌           | ✅🔥   |
+| Scalable            | ❌           | ✅     |
+
+
+
+Why FAISS Fits Your Project
+
+Your system already does:
+
+Convert students → vectors
+
+Compute similarity
+
+Find best matches
+
+👉 That’s EXACTLY what FAISS is designed for.
+
+
+
+
+can use for Future  work / can use to make model so storing but thew data besa is small for big data FAISS is very better   

@@ -1,0 +1,250 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator erd {
+  provider = "prisma-erd-generator"
+  output   = "./ERD.md"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  user_id       BigInt         @id @default(autoincrement())
+  name          String         @db.VarChar(100)
+  email         String         @unique @db.VarChar(255)
+  password_hash String?
+  profile_image String?        @db.VarChar(255)
+  phone_number  String         @db.VarChar(20)
+  created_at    DateTime       @default(now()) @db.Timestamp(6)
+  verified      Boolean        @default(false)
+  role          String         @default("student") @db.VarChar(20)
+  landlord      Landlord?
+  notifications Notification[]
+  student       Student?
+
+  @@map("users")
+}
+
+model Student {
+  student_id          BigInt              @id
+  university_name     String              @db.VarChar(150)
+  major               String              @db.VarChar(100)
+  gender              String              @db.VarChar(20)
+  academic_year       String              @db.VarChar(30)
+  bio_interests       String?
+  vector_value        String?
+  academic_semester   String?             @db.VarChar(30)
+  ai_matches_1        AiMatching[]        @relation("Student1")
+  ai_matches_2        AiMatching[]        @relation("Student2")
+  bookings            Booking[]
+  maintenance_tickets MaintenanceTicket[]
+  reviews             Review[]
+  received_requests   RoommateRequest[]   @relation("ReceivedRequests")
+  sent_requests       RoommateRequest[]   @relation("SentRequests")
+  preferences         StudentPreference?
+  wishlist            Wishlist[]
+  user                User                @relation(fields: [student_id], references: [user_id], onDelete: Cascade)
+
+  @@map("students")
+}
+
+model RoommateRequest {
+  request_id  BigInt   @id @default(autoincrement())
+  sender_id   BigInt
+  receiver_id BigInt
+  status      String   @default("pending") @db.VarChar(30)
+  created_at  DateTime @default(now()) @db.Timestamp(6)
+  receiver    Student  @relation("ReceivedRequests", fields: [receiver_id], references: [student_id], onDelete: Cascade)
+  sender      Student  @relation("SentRequests", fields: [sender_id], references: [student_id], onDelete: Cascade)
+
+  @@unique([sender_id, receiver_id], name: "uq_sender_receiver")
+  @@map("roommate_requests")
+}
+
+model StudentPreference {
+  student_id        BigInt   @id
+  sleep_schedule    String   @db.VarChar(50)
+  smoking_status    String   @db.VarChar(50)
+  cleanliness_level String   @db.VarChar(50)
+  noise_tolerance   String   @db.VarChar(50)
+  social_level      String   @db.VarChar(50)
+  study_level       String   @db.VarChar(50)
+  guest_preference  String   @db.VarChar(50)
+  created_at        DateTime @default(now()) @db.Timestamp(6)
+  student           Student  @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+
+  @@map("student_preferences")
+}
+
+model Landlord {
+  landlord_id              BigInt     @id
+  national_id              String     @unique @db.VarChar(50)
+  business_name            String     @db.VarChar(150)
+  verification_status      String     @default("pending") @db.VarChar(30)
+  rating                   Decimal?   @default(0.00) @db.Decimal(3, 2)
+  bank_name                String?    @db.VarChar(150)
+  bank_account_holder_name String?    @db.VarChar(150)
+  user                     User       @relation(fields: [landlord_id], references: [user_id], onDelete: Cascade)
+  properties               Property[]
+
+  @@map("landlords")
+}
+
+model Property {
+  property_id      BigInt            @id @default(autoincrement())
+  landlord_id      BigInt
+  title            String            @db.VarChar(150)
+  description      String
+  address          String
+  ai_tags          String
+  created_at       DateTime          @default(now()) @db.Timestamp(6)
+  properties_image String?
+  currency         String?           @db.VarChar(10)
+  house_rules      Json?
+  maps_url         String?           @db.VarChar(500)
+  nearby_places    Json?
+  rental_period    String?           @db.VarChar(50)
+  size             Int?
+  landlord         Landlord          @relation(fields: [landlord_id], references: [landlord_id], onDelete: Cascade)
+  location         PropertyLocation?
+  reviews          Review[]
+  units            Unit[]
+  wishlists        Wishlist[]
+
+  @@map("properties")
+}
+
+model PropertyLocation {
+  location_id       BigInt   @id @default(autoincrement())
+  property_id       BigInt   @unique
+  latitude          Decimal  @db.Decimal(10, 7)
+  longitude         Decimal  @db.Decimal(10, 7)
+  google_place_id   String?  @db.VarChar(255)
+  formatted_address String?
+  city              String?  @db.VarChar(100)
+  area              String?  @db.VarChar(100)
+  created_at        DateTime @default(now()) @db.Timestamp(6)
+  property          Property @relation(fields: [property_id], references: [property_id], onDelete: Cascade)
+
+  @@map("property_locations")
+}
+
+model Unit {
+  unit_id             BigInt              @id @default(autoincrement())
+  property_id         BigInt
+  type                String              @db.VarChar(50)
+  price               Decimal             @db.Decimal(10, 2)
+  availability_status String              @default("available") @db.VarChar(30)
+  units_image         String?             @db.VarChar(255)
+  rental_type         String              @default("monthly") @db.VarChar(20)
+  bookings            Booking[]
+  maintenance_tickets MaintenanceTicket[]
+  reviews             Review[]
+  property            Property            @relation(fields: [property_id], references: [property_id], onDelete: Cascade)
+
+  @@map("units")
+}
+
+model Booking {
+  booking_id    BigInt    @id @default(autoincrement())
+  student_id    BigInt
+  unit_id       BigInt
+  booking_date  DateTime  @default(now()) @db.Date
+  checkin_date  DateTime  @db.Date
+  status        String    @default("pending") @db.VarChar(30)
+  checkout_date DateTime? @db.Date
+  rental_type   String    @default("monthly") @db.VarChar(20)
+  student       Student   @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+  unit          Unit      @relation(fields: [unit_id], references: [unit_id], onDelete: Cascade)
+  payment       Payment?
+
+  @@map("bookings")
+}
+
+model Payment {
+  payment_id            BigInt    @id @default(autoincrement())
+  booking_id            BigInt    @unique
+  transaction_id        String?   @unique @db.VarChar(100)
+  amount                Decimal   @db.Decimal(10, 2)
+  payment_date          DateTime? @db.Date
+  payment_method        String?   @db.VarChar(50)
+  due_date              DateTime? @db.Date
+  status                String    @default("pending") @db.VarChar(20)
+  cardholder_name       String?   @db.VarChar(150)
+  expiration_date       String?   @db.VarChar(10)
+  card_bank_name        String?   @db.VarChar(150)
+  masked_card_number    String?   @db.VarChar(30)
+  encrypted_card_number String?
+  encrypted_cvv         String?
+  encrypted_pin         String?
+  booking               Booking   @relation(fields: [booking_id], references: [booking_id], onDelete: Cascade)
+
+  @@map("payments")
+}
+
+model Review {
+  review_id    BigInt   @id @default(autoincrement())
+  student_id   BigInt
+  property_id  BigInt
+  rating_value Int
+  comment      String?
+  created_at   DateTime @default(now()) @db.Timestamp(6)
+  unit_id      BigInt?
+  property     Property @relation(fields: [property_id], references: [property_id], onDelete: Cascade)
+  student      Student  @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+  unit         Unit?    @relation(fields: [unit_id], references: [unit_id], onDelete: Cascade)
+
+  @@map("reviews")
+}
+
+model MaintenanceTicket {
+  ticket_id         BigInt   @id @default(autoincrement())
+  student_id        BigInt
+  unit_id           BigInt
+  issue_description String
+  ticket_date       DateTime @default(now()) @db.Date
+  status            String   @default("open") @db.VarChar(30)
+  student           Student  @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+  unit              Unit     @relation(fields: [unit_id], references: [unit_id], onDelete: Cascade)
+
+  @@map("maintenance_tickets")
+}
+
+model AiMatching {
+  match_id         BigInt   @id @default(autoincrement())
+  student1_id      BigInt
+  student2_id      BigInt
+  match_date       DateTime @default(now()) @db.Date
+  similarity_score Decimal  @db.Decimal(5, 2)
+  student1         Student  @relation("Student1", fields: [student1_id], references: [student_id], onDelete: Cascade)
+  student2         Student  @relation("Student2", fields: [student2_id], references: [student_id], onDelete: Cascade)
+
+  @@unique([student1_id, student2_id], name: "uq_student_pair")
+  @@map("ai_matching")
+}
+
+model Notification {
+  notification_id BigInt   @id @default(autoincrement())
+  user_id         BigInt
+  title           String   @db.VarChar(150)
+  message         String
+  type            String   @db.VarChar(50)
+  is_read         Boolean  @default(false)
+  created_at      DateTime @default(now()) @db.Timestamp(6)
+  user            User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@map("notifications")
+}
+
+model Wishlist {
+  student_id  BigInt
+  property_id BigInt
+  student     Student  @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+  property    Property @relation(fields: [property_id], references: [property_id], onDelete: Cascade)
+
+  @@id([student_id, property_id])
+  @@map("wishlist")
+}
